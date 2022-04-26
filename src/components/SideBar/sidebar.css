@@ -1,0 +1,30 @@
+.sideBar {
+  flex: 1;
+  height: calc(100vh - 50px);
+  position: sticky;
+  top: 50px;
+  background-color: rgb(251, 251, 255);
+}
+
+.sideBarWrapper {
+  padding: 20px;
+  color: #555;
+}
+
+.sideBarTitle {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.sideBarTitle.active,
+.sideBarTitle:hover {
+  background-color: rgb(220, 220, 250);
+}
+
+.sideBarIcon {
+  margin-right: 5px;
+  font-size: 12px;
+}

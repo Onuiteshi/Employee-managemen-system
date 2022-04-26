@@ -1,10 +1,10 @@
 import "./App.css";
-import TopBar from "./layout/TopBar/TopBar";
+import Route from "./routes";
 
 function App() {
   return (
     <div className="App">
-      <TopBar />
+      <Route />
     </div>
   );
 }
