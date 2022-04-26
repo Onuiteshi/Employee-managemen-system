@@ -1,0 +1,10 @@
+.loginContainer {
+  background-color: darkblue;
+  height: 100vh;
+  display: flex;
+}
+
+.logo {
+  text-align: center;
+  font-size: 1.3rem !important;
+}
