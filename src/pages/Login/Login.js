@@ -8,6 +8,8 @@ import { Button } from "@mui/material";
 import "./login.css";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+
 const Login = () => {
   const {
     register,
@@ -15,8 +17,13 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
+  const navigate = useNavigate();
+
   const submitForm = (data) => {
     console.log(data);
+    let value = JSON.stringify(data);
+    localStorage.setItem("user", value);
+    navigate("/dashboard");
   };
   return (
     <div className="loginContainer">
@@ -59,7 +66,11 @@ const Login = () => {
                     size="small"
                     margin="normal"
                     {...register("password", {
-                      required: "Password is Required",
+                      required: "You must specify a password",
+                      minLength: {
+                        value: 8,
+                        message: "Password must have at least 8 characters",
+                      },
                     })}
                     error={!!errors?.password}
                     helperText={
@@ -71,6 +82,9 @@ const Login = () => {
                   Login
                 </Button>
               </form>
+              <small style={{ color: "grey", fontWeight: "bold" }}>
+                * Input your email and create a password to register/login
+              </small>
             </CardContent>
           </Card>
         </Container>

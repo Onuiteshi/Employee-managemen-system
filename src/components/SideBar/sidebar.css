@@ -18,6 +18,7 @@
   border-radius: 10px;
   padding: 5px;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 .sideBarTitle.active,
@@ -26,6 +27,10 @@
 }
 
 .sideBarIcon {
-  margin-right: 5px;
-  font-size: 12px;
+  margin-right: 0.31rem;
+  font-size: 0.8rem;
+}
+
+.logoutBtn {
+  margin-top: 1.25rem;
 }
