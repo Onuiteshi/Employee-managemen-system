@@ -17,6 +17,7 @@
 .topBarIconContainer {
   position: relative;
   margin-right: 10px;
+  color: #555;
 }
 
 .topBarIconBadge {
@@ -45,4 +46,10 @@
 .topRight {
   display: flex;
   align-items: center;
+}
+
+.topAvatar {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }

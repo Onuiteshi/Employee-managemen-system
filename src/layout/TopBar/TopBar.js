@@ -18,6 +18,11 @@ const TopBar = () => {
           <div className="topBarIconContainer">
             <Settings />
           </div>
+          <img
+            src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"
+            alt="profile-pics"
+            className="topAvatar"
+          />
         </div>
       </div>
     </div>
