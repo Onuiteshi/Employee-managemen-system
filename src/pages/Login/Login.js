@@ -78,7 +78,12 @@ const Login = () => {
                     }
                   />
                 </Box>
-                <Button type="submit" variant="contained" fullWidth>
+                <Button
+                  type="submit"
+                  color="secondary"
+                  variant="contained"
+                  fullWidth
+                >
                   Login
                 </Button>
               </form>
