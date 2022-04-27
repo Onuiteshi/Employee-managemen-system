@@ -23,6 +23,7 @@ const Login = () => {
     console.log(data);
     let value = JSON.stringify(data);
     localStorage.setItem("user", value);
+    localStorage.setItem("email", data.email);
     navigate("/dashboard");
   };
   return (

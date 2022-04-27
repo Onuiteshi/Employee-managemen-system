@@ -4,10 +4,10 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
 const Dashboard = () => {
-  const user = localStorage.getItem("user");
+  const user = localStorage.getItem("email");
   return (
     <div className="dashboardContainer">
-      <h3>Welcome {user.slice(10, -28)}</h3>
+      <h3>Welcome {user}</h3>
       <div className="cardWrapper">
         <Card variant="outlined">
           <CardContent>
