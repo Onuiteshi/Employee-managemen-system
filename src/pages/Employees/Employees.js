@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
-
+import "./styles.css";
 import Header from "../../components/Header/Header";
 import List from "../../components/List/List";
 import Add from "../../components/Add/Add";
@@ -46,7 +46,7 @@ const Employees = () => {
   };
 
   return (
-    <div className="container">
+    <div className="employeeContainer">
       {/* List */}
       {!isAdding && !isEditing && (
         <>

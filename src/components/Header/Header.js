@@ -1,13 +1,20 @@
 import React from "react";
+import { Button } from "@mui/material";
+import Add from "@mui/icons-material/Add";
 
 function Header({ setIsAdding }) {
   return (
     <header>
-      <h1>Employee Management Software</h1>
+      <h3>Employee Management Software</h3>
       <div style={{ marginTop: "30px", marginBottom: "18px" }}>
-        <button onClick={() => setIsAdding(true)} className="round-button">
+        <Button
+          onClick={() => setIsAdding(true)}
+          startIcon={<Add />}
+          color="secondary"
+          variant="contained"
+        >
           Add Button
-        </button>
+        </Button>
       </div>
     </header>
   );
